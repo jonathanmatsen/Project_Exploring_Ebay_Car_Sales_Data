@@ -1,0 +1,37 @@
+import pandas as pd
+
+autos = pd.read_csv('autos.csv', encoding='Latin-1')
+
+# autos.head(1)
+
+autos.head(1)
+
+# autos.info
+autos.info()
+
+# _observations_
+
+#### Nulls ##### Deal With
+* vehicleType            44905 non-null object
+* gearbox                47320 non-null object
+* model                  47242 non-null object
+* fuelType               45518 non-null object
+* notRepairedDamage      40171 non-null object
+
+---------------
+
+#### axis=1 & dtype=int
+* yearOfRegistration     50000 non-null int64
+* powerPS                50000 non-null int64
+* monthOfRegistration    50000 non-null int64
+* nrOfPictures           50000 non-null int64
+* postalCode             50000 non-null int64
+
+*remaining axis=1 dtype=object
+
+
+columns1 = autos.columns
+columns1
+
+# autos.describe
+autos.describe()
